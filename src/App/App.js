@@ -18,7 +18,7 @@ class App extends Component {
 
     componentDidMount() {
         const noteURL = 'https://radiant-forest-06016.herokuapp.com/api/notes';
-        const folderURL = 'https://radiant-forest-06016.herokuapp.com//api/folders';
+        const folderURL = 'https://radiant-forest-06016.herokuapp.com/api/folders';
         Promise.all([fetch(noteURL), fetch(folderURL)])
         .then(([noteRes, folderRes]) => {
             if (!noteRes.ok) {
