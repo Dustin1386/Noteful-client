@@ -17,8 +17,8 @@ class App extends Component {
     };
 
     componentDidMount() {
-        const noteURL = 'https://warm-ridge-59267.herokuapp.com/api/notes';
-        const folderURL = 'https://warm-ridge-59267.herokuapp.com/api/folders';
+        const noteURL = 'https://radiant-forest-06016.herokuapp.com/api/notes';
+        const folderURL = 'https://radiant-forest-06016.herokuapp.com//api/folders';
         Promise.all([fetch(noteURL), fetch(folderURL)])
         .then(([noteRes, folderRes]) => {
             if (!noteRes.ok) {

@@ -32,7 +32,7 @@ export default class AddNote extends React.Component {
             'content': noteContent.value,
         }
         this.setState({error: null})
-        const url = 'https://warm-ridge-59267.herokuapp.com/api/notes';
+        const url = 'https://radiant-forest-06016.herokuapp.com/api/notes';
         fetch(url, {
             method: 'POST',
             body: JSON.stringify(note),
@@ -103,7 +103,7 @@ export default class AddNote extends React.Component {
                         type='text'
                         name='noteName'
                         id='noteName'
-                        placeholder='Unicorns'
+                        placeholder='Name'
                         aria-required='true'
                         aria-describedby='name error'
                         onChange={e => this.updateName(e.target.value)}
@@ -127,7 +127,7 @@ export default class AddNote extends React.Component {
                     <textarea
                         name='noteContent'
                         id='noteContent'
-                        placeholder='Unicorns are magical creatures'
+                        placeholder='Type stuff here'
                         aria-required='true'
                         aria-describedby='content error'
                         onChange={e => this.updateContent(e.target.value)}
