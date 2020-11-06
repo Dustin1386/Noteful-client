@@ -1,0 +1,51 @@
+.folderForm {
+    background-color: #010d1e;
+    color: #cacaca;
+    font-size: 14px;
+    padding: 8px 0 5px 8px;
+    margin: 8px 8px 0 8px;
+    position: relative;
+}
+
+label {
+    margin-left: 5px;
+}
+
+input {
+    margin-left: 2px;
+    background-color: #cacaca;
+    border-color: #cacaca;
+}
+
+.folderButton__add {
+    background-color: #cacaca;
+    margin: 5px 0 0 5px;
+}
+
+.folderButton__add:hover {
+    cursor: pointer;
+}
+
+.folderButton__cancel:hover {
+    cursor: pointer;
+}
+
+.folderButton__cancel {
+    --note-button-height: 32px;
+    background-color: #cacaca;
+    border: 0;
+    float: right;
+    font-size: 12px;
+    position: relative;
+    top: -71px;
+    transform-origin: right bottom;
+    transform: rotate(-90deg);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.error {
+    color: red;
+    display: block;
+    margin: 5px;
+}

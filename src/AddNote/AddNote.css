@@ -1,0 +1,65 @@
+.noteForm {
+    background-color: #010d1e;
+    color: #cacaca;
+    font-size: 14px;
+    padding: 8px 0 5px 8px;
+    margin: 8px 8px 0 8px;
+    position: relative;
+}
+
+input, select {
+    margin: 5px;
+    background-color: #ffffff;
+    border-color: #ffffff;
+    display: block;
+}
+
+select {
+        border-radius: 2px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+        -webkit-padding-end: 20px;
+        -webkit-padding-start: 2px;
+        -webkit-user-select: none;
+        border: 1px solid #AAA;
+        color: #555;
+        font-size: inherit;
+        overflow: hidden;
+        padding: 5px 10px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 150px;
+}
+
+.noteButtons {
+    text-align: center;
+}
+
+.noteButton__add {
+    background-color: #cacaca;
+    margin-top: 5px;
+}
+
+.noteButton__add:hover {
+    cursor: pointer;
+}
+
+.noteButton__cancel:hover {
+    cursor: pointer;
+}
+
+.noteButton__cancel {
+    background-color: #cacaca;
+    border: 0;
+    font-size: 12px;
+}
+
+textarea {
+    width: 97%;
+    height: 100px
+}
+
+.error, .AddBookmark__error {
+    color: red;
+    display: block;
+    margin: 5px;
+}
