@@ -11,8 +11,8 @@ export default class Note extends React.Component {
 
   handleDeleteNote = e => {
     e.preventDefault();
-    const noteID = this.props.id;
-    const url = 'https://radiant-forest-06016.herokuapp.com/api/note/' + noteID;
+    const noteId = this.props.id;
+    const url = 'https://radiant-forest-06016.herokuapp.com/api/note/' + noteId;
     fetch(url, { method: 'DELETE', })
     .then(response => {
         if (!response.ok) {
@@ -21,7 +21,7 @@ export default class Note extends React.Component {
         return 
     })
     .then(() => {
-      this.context.deleteNote(noteID);
+      this.context.deleteNote(noteId);
       this.props.deleteNote(this.props.name);
     })
     .catch(error => console.error(error));

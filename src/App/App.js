@@ -35,9 +35,9 @@ class App extends Component {
         .catch(error => console.error(error))
     };
 
-    deleteNote = noteID  => {
+    deleteNote = noteId  => {
         this.setState({
-            notes: this.state.notes.filter(note => note.id !== noteID)
+            notes: this.state.notes.filter(note => note.id !== noteId)
         })
     }
 
